@@ -7,8 +7,8 @@ from core.summarizer import summarize, generate_title
 from core.extractor import extract_action_items, extract_key_decisions, extract_questions
 
 
-source = "https://youtu.be/vFP1mgZ_LEY?si=fUaf_YioIw6UmbHi"
-language = "hinglish"   # "english" → Whisper, "hinglish" → Sarvam
+source = "https://youtu.be/_Q-e_nczWqM"
+language = "english"   # "english" → Whisper, "hinglish" → Sarvam
 
 
 
