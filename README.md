@@ -11,7 +11,7 @@ The project ships with three ways to use it:
 
 ---
 
-## ✨ Features
+## Features
 
 -  **Flexible input** — YouTube URLs or local audio/video files
 -  **Transcription** — supports English and Hinglish
@@ -25,7 +25,7 @@ The project ships with three ways to use it:
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 LANGVID/
@@ -52,7 +52,7 @@ LANGVID/
 ## ⚙️ Requirements
 
 - Python 3.10+
-- Langchain, ChromDB
+- Langchain, ChromDB, OpenAI Whisper, Sarvam TTS saaras:v3, Mistral OS Model
 - API keys for whichever LLM/transcription providers `core/` is configured to use (set in `.env`)
 
 ---
@@ -74,7 +74,8 @@ pip install -r requirements.txt
 Create a `.env` file in the project root with the keys your `core/` modules expect, e.g.:
 
 ```env
-OPENAI_API_KEY=your_key_here
+MISTRAL_API_KEY=your_key_here
+SARVAM_API_KEY=your_key_here
 # add any other provider keys used by transcriber.py / summarizer.py / rag_engine.py
 ```
 
@@ -110,18 +111,6 @@ The CLI, Streamlit app, and FastAPI backend are all thin wrappers around this sa
 
 ---
 
-## 🖼️ Web App (React)
-
-The React frontend talks to the FastAPI backend over two endpoints:
-
-| Endpoint   | Method | Description |
-|------------|--------|-------------|
-| `/analyse` | POST   | Runs the full pipeline on a source and returns the title, transcript, summary, and extracted insights, plus a `session_id` |
-| `/chat`    | POST   | Accepts a `session_id` and `question`, returns an answer grounded in that session's transcript |
-
-Sessions are currently kept in memory on the backend — restarting the server clears them. For multi-user or production use, swap the in-memory store in `api/server.py` for Redis or a database.
-
----
 
 ## Roadmap Ideas
 
@@ -135,4 +124,4 @@ Sessions are currently kept in memory on the backend — restarting the server c
 
 ##  License
 
-Add your license of choice here (MIT, Apache 2.0, etc.).
+MIT License
