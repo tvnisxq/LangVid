@@ -52,7 +52,7 @@ LANGVID/
 ## ⚙️ Requirements
 
 - Python 3.10+
-- Node.js 18+ (only needed for the React frontend)
+- Langchain, ChromDB
 - API keys for whichever LLM/transcription providers `core/` is configured to use (set in `.env`)
 
 ---
@@ -95,25 +95,9 @@ streamlit run app.py
 ```
 Open the local URL Streamlit prints (typically `http://localhost:8501`).
 
-**Option C — React frontend + FastAPI backend**
-
-Backend:
-```bash
-pip install fastapi uvicorn
-uvicorn api.server:app --reload --port 8000
-```
-
-Frontend (in a separate terminal):
-```bash
-cd frontend
-npm install
-npm run dev
-```
-Open `http://localhost:5173`.
-
 ---
 
-## 🧩 How It Works
+##  How It Works
 
 1. **`process_input(source)`** — pulls audio from a YouTube URL or local file and splits it into chunks.
 2. **`transcribe_all(chunks, language)`** — transcribes each chunk and stitches together the full transcript.
@@ -139,7 +123,7 @@ Sessions are currently kept in memory on the backend — restarting the server c
 
 ---
 
-## 🛣️ Roadmap Ideas
+## Roadmap Ideas
 
 - [ ] Multipart file upload endpoint (currently file input assumes a server-accessible path)
 - [ ] Streaming/SSE pipeline progress instead of a single blocking request
@@ -149,6 +133,6 @@ Sessions are currently kept in memory on the backend — restarting the server c
 
 ---
 
-## 📄 License
+##  License
 
 Add your license of choice here (MIT, Apache 2.0, etc.).
