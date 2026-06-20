@@ -1,5 +1,5 @@
 import yt_dlp
-from pydub import AudioSegment
+# from pydub import AudioSegment
 import os
 
 DOWNLOAD_DIR = 'downloades'
@@ -33,7 +33,7 @@ def convert_to_wav(input_path: str) -> str:
     audio = AudioSegment.from_file(input_path)
     audio = audio.set_channels(1).set_frame_rate(16000) #16khz
     audio.export(output_path, format="wav")
-    return output_path
+    return NotImplementedError
 
 
 
@@ -50,7 +50,7 @@ def chunk_audio(wav_path : str , chunk_minutes : int = 10) -> list:
 
         chunks.append(chunk_path)
     
-    return chunks
+    return NotImplementedError
 
 def process_input(source: str) -> list:
     if source.startswith("http://") or source.startswith("https://"):
