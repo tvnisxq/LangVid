@@ -12,13 +12,17 @@ The project ships with three ways to use it:
 ---
 ## Snapshots
 
-[Home](assets/home.png)
+#### Home
+![Home](assets/home.png)
 
-[Controls](assets/controls.png)
+#### Controls
+![Controls](assets/controls.png)
 
-[Transcript](assets/transcript.png)
+#### Transcript
+![Transcript](assets/transcript.png)
 
-[Chat](assets/chat.png)
+#### Chat
+![Chat](assets/chat.png)
 
 ---
 
