@@ -68,9 +68,9 @@ LANGVID/
 
 ## ⚙️ Requirements
 
-- Python 3.10+
-- Langchain, ChromDB, OpenAI Whisper, Sarvam TTS saaras:v3, Mistral OS Model
-- API keys for whichever LLM/transcription providers `core/` is configured to use (set in `.env`)
+##### - Python 3.10+
+##### - Langchain, ChromDB, OpenAI Whisper, Sarvam TTS saaras:v3, Mistral OS Model
+##### - API keys for whichever LLM/transcription providers `core/` is configured to use (set in `.env`)
 
 ---
 
