@@ -13,15 +13,15 @@ The project ships with three ways to use it:
 
 ## ✨ Features
 
-- 🎧 **Flexible input** — YouTube URLs or local audio/video files
-- 📝 **Transcription** — supports English and Hinglish
-- 🏷️ **Auto-generated titles** for each session
-- 📋 **Summarization** of the full conversation
-- ✅ **Action item extraction**
-- 🔑 **Key decision extraction**
-- ❓ **Open question extraction**
-- 💬 **Chat with your transcript** via a RAG-powered Q&A engine
-- 🖥️ **Three interfaces**: CLI, Streamlit, and a React + FastAPI web app
+-  **Flexible input** — YouTube URLs or local audio/video files
+-  **Transcription** — supports English and Hinglish
+-  **Auto-generated titles** for each session
+-  **Summarization** of the full conversation
+-  **Action item extraction**
+-  **Key decision extraction**
+-  **Open question extraction**
+-  **Chat with your transcript** via a RAG-powered Q&A engine
+-  **Three interfaces**: CLI, Streamlit, and a React + FastAPI web app
 
 ---
 
@@ -38,16 +38,6 @@ LANGVID/
 │
 ├── utils/
 │   └── audio_processor.py      # Input handling: URL/file → audio chunks
-│
-├── api/                        # FastAPI backend (for the React frontend)
-│   ├── server.py               # /analyse and /chat endpoints
-│   └── schemas.py               # Request/response models
-│
-├── frontend/                   # React + Vite + Tailwind web app
-│   └── src/
-│       ├── App.jsx
-│       └── components/
-│           └── AIVideoAssistant.jsx
 │
 ├── vector_db/                  # Persisted vector store data
 ├── downloads/                  # Downloaded/extracted media
