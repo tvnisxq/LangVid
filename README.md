@@ -19,6 +19,7 @@ The project ships with three ways to use it:
 [Transcript](assets/transcript.png)
 
 [Chat](assets/chat.png)
+
 ---
 
 
