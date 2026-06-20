@@ -7,7 +7,6 @@ LangVid ingests a YouTube link or local audio/video file, transcribes it, and ru
 The project ships with three ways to use it:
 - A **CLI** (`main.py`) for quick, scriptable runs
 - A **Streamlit UI** (`app.py`) for a fast, no-build interactive interface
-- A **React frontend + FastAPI backend** (`frontend/` + `api/`) for a fully custom, production-style web app
 
 ---
 ## Snapshots
