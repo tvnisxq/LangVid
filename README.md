@@ -10,6 +10,19 @@ The project ships with three ways to use it:
 - A **React frontend + FastAPI backend** (`frontend/` + `api/`) for a fully custom, production-style web app
 
 ---
+## Snapshots
+
+[Home](assets/home.png)
+
+[Controls](assets/controls.png)
+
+[Transcript](assets/transcript.png)
+
+[Chat](assets/chat.png)
+---
+
+
+---
 
 ## Features
 
